@@ -1,0 +1,150 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #4e73df, #1cc88a);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid white;
+}
+
+/* Navigation */
+nav {
+    background-color: #343a40;
+    text-align: center;
+    padding: 15px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #1cc88a;
+}
+
+/* Sections */
+section {
+    background: white;
+    width: 85%;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #4e73df;
+}
+
+h3 {
+    margin-top: 15px;
+    margin-bottom: 8px;
+    color: #1cc88a;
+}
+
+ul {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* Contact */
+#contact p {
+    margin-bottom: 8px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 8px 10px 0 0;
+    padding: 8px 15px;
+    background-color: #4e73df;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background-color: #1cc88a;
+}
+
+/* Footer */
+footer {
+    background: #343a40;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    section {
+        width: 92%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    header {
+        padding: 20px 10px;
+    }
+
+    .profile-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .social-links a {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
